@@ -4,53 +4,60 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./style.css" />
   </head>
 
   <body>
     <h1>Autoplay video</h1>
-    <h2>With autoplay attribute</h2>
-    <video
-      loop
-      muted
-      autoplay
-      width="100%"
-      playsinline
-      poster="https://pbs.twimg.com/media/EKQFS0ZXUAUQcSl?format=jpg&name=medium"
-      src="https://play.google.com/about/playpoints/static/videos/earn_points/apps_grid_m-ad6f16d83b06dee511ada1da2830db1dcc4deac56030929db9308bfe53215bb3.mp4"
-    ></video>
+    <div class="container">
+      <div class="box">
+        <h2>With autoplay attribute</h2>
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          poster="https://pbs.twimg.com/media/EKQFS0ZXUAUQcSl?format=jpg&name=medium"
+          src="https://play.google.com/about/playpoints/static/videos/earn_points/apps_grid_m-ad6f16d83b06dee511ada1da2830db1dcc4deac56030929db9308bfe53215bb3.mp4"
+        ></video>
+      </div>
 
-    <h2>Without autoplay attribute</h2>
-    <video
-      loop
-      muted
-      width="100%"
-      playsinline
-      poster="https://pbs.twimg.com/media/EKQFS0ZXUAUQcSl?format=jpg&name=medium"
-      src="https://play.google.com/about/playpoints/static/videos/earn_points/apps_grid_m-ad6f16d83b06dee511ada1da2830db1dcc4deac56030929db9308bfe53215bb3.mp4"
-    ></video>
+      <div class="box">
+        <h2>Without autoplay attribute</h2>
+        <video
+          loop
+          muted
+          playsinline
+          poster="https://pbs.twimg.com/media/EKQFS0ZXUAUQcSl?format=jpg&name=medium"
+          src="https://play.google.com/about/playpoints/static/videos/earn_points/apps_grid_m-ad6f16d83b06dee511ada1da2830db1dcc4deac56030929db9308bfe53215bb3.mp4"
+        ></video>
+      </div>
 
-    <h2>With autoplay attribute + autoplay via javascript</h2>
-    <video
-      data-autoplay
-      autoplay
-      loop
-      muted
-      width="100%"
-      playsinline
-      poster="https://pbs.twimg.com/media/EKQFS0ZXUAUQcSl?format=jpg&name=medium"
-      src="https://play.google.com/about/playpoints/static/videos/earn_points/apps_grid_m-ad6f16d83b06dee511ada1da2830db1dcc4deac56030929db9308bfe53215bb3.mp4"
-    ></video>
+      <div class="box">
+        <h2>With autoplay attribute + autoplay via javascript</h2>
+        <video
+          data-autoplay
+          autoplay
+          loop
+          muted
+          playsinline
+          poster="https://pbs.twimg.com/media/EKQFS0ZXUAUQcSl?format=jpg&name=medium"
+          src="https://play.google.com/about/playpoints/static/videos/earn_points/apps_grid_m-ad6f16d83b06dee511ada1da2830db1dcc4deac56030929db9308bfe53215bb3.mp4"
+        ></video>
+      </div>
 
-    <h2>Without autoplay attribute + autoplay via javascript</h2>
-    <video
-      data-autoplay
-      loop
-      muted
-      width="100%"
-      playsinline
-      poster="https://pbs.twimg.com/media/EKQFS0ZXUAUQcSl?format=jpg&name=medium"
-      src="https://play.google.com/about/playpoints/static/videos/earn_points/apps_grid_m-ad6f16d83b06dee511ada1da2830db1dcc4deac56030929db9308bfe53215bb3.mp4"
-    ></video>
+      <div class="box">
+        <h2>Without autoplay attribute + autoplay via javascript</h2>
+        <video
+          data-autoplay
+          loop
+          muted
+          playsinline
+          poster="https://pbs.twimg.com/media/EKQFS0ZXUAUQcSl?format=jpg&name=medium"
+          src="https://play.google.com/about/playpoints/static/videos/earn_points/apps_grid_m-ad6f16d83b06dee511ada1da2830db1dcc4deac56030929db9308bfe53215bb3.mp4"
+        ></video>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>

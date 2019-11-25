@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  background-color: #dfe6e9;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 1em;
+  max-width: 400px;
+}
+
+video {
+  width: 100%;
+}

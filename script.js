@@ -1,7 +1,3 @@
-import data from './videos.json'
-
-const { videos } = data
-
 let $container
 const $autoPlayVideos = []
 
@@ -52,8 +48,12 @@ function createVideo({ label, attributes }) {
   $container.appendChild($details)
 }
 
-function init() {
+async function init() {
   $container = document.querySelector('.container')
+
+  const { videos } = await fetch('./videos.json').then(response =>
+    response.json()
+  )
 
   videos.forEach(createVideo)
 

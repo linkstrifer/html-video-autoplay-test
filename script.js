@@ -13,11 +13,11 @@ function createDetails({
   const $container = document.querySelector(`#${container}`)
   const $details = document.createElement('details')
   const $summary = document.createElement('summary')
-  const $label = document.createElement('h2')
+  const $label = document.createElement('h3')
 
   $details.classList.add('box')
 
-  $label.textContent = `${label}`
+  $label.innerHTML = `${label} <small>[open for more details]</small>`
 
   $summary.appendChild($label)
 
@@ -72,11 +72,6 @@ function createImage({ label, sources, src }) {
   const $picture = document.createElement('picture')
   const $img = document.createElement('img')
   const $attributes = document.createElement('ul')
-  const $attribute = document.createElement('li')
-
-  $attribute.textContent = `src: ${src}`
-
-  $attributes.appendChild($attribute)
 
   $img.src = src
 

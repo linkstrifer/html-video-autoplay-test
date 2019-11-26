@@ -2,6 +2,16 @@ body {
   font-family: sans-serif;
 }
 
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+small {
+  display: block;
+}
+
 ul {
   margin: 1em;
   padding: 0;

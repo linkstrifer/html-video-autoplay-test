@@ -1,6 +1,8 @@
 # HTML5 video autoplay test
 
-This is a demo to test autoplay in mobile devices and browsers. Demo available at [strifer.link/html-video-autoplay-test](http://strifer.link/html-video-autoplay-test/)
+This is a demo to test autoplay in mobile devices and browsers. 
+
+Demo available at [strifer.link/html-video-autoplay-test](http://strifer.link/html-video-autoplay-test/)
 
 ## Tests
 

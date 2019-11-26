@@ -2,11 +2,13 @@
 
 This is a demo to test autoplay in mobile devices and browsers. 
 
-Demo available at [strifer.link/html-video-autoplay-test](http://strifer.link/html-video-autoplay-test/)
+Demo available at [strifer.link/html-video-autoplay-test](http://strifer.link/html-video-autoplay-test/).
 
 ## Tests
 
-If you need to add a test, please [open a issue](https://github.com/linkstrifer/html-video-autoplay-test/issues/new) or [create a PR](https://github.com/linkstrifer/html-video-autoplay-test/compare)
+If you need to add a test, please [open a issue](https://github.com/linkstrifer/html-video-autoplay-test/issues/new) or [create a PR](https://github.com/linkstrifer/html-video-autoplay-test/compare).
+
+Current tests
 
 ```json
 {

@@ -72,6 +72,11 @@ function createImage({ label, sources, src }) {
   const $picture = document.createElement('picture')
   const $img = document.createElement('img')
   const $attributes = document.createElement('ul')
+  const $attribute = document.createElement('li')
+
+  $attribute.textContent = `src: ${src}`
+
+  $attributes.appendChild($attribute)
 
   $img.src = src
 

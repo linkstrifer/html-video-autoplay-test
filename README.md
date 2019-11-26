@@ -6,6 +6,8 @@ Demo available at [strifer.link/html-video-autoplay-test](http://strifer.link/ht
 
 ## Tests
 
+If you need to add a test, please [open a issue](https://github.com/linkstrifer/html-video-autoplay-test/issues/new) or [create a PR](https://github.com/linkstrifer/html-video-autoplay-test/compare)
+
 ```json
 {
   "videos": [

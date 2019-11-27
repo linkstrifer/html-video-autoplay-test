@@ -33,7 +33,7 @@ function createDetails({
   $container.appendChild($details)
 }
 
-function createVideo({ label, attributes }) {
+function createVideo({ label, attributes, container }) {
   const $video = document.createElement('video')
   const $attributes = document.createElement('ul')
 
@@ -64,7 +64,7 @@ function createVideo({ label, attributes }) {
     details: $attributes,
     label,
     summary: $video,
-    container: 'videos',
+    container,
   })
 }
 
@@ -100,13 +100,19 @@ function createImage({ label, sources, src }) {
 }
 
 async function init() {
-  const { videos, images } = await fetch('./data.json').then(response =>
+  const { mp4, webm, images } = await fetch('./data.json').then(response =>
     response.json()
   )
 
   images.forEach(createImage)
 
-  videos.forEach(createVideo)
+  mp4.forEach(video => {
+    createVideo({ ...video, container: 'mp4' })
+  })
+
+  webm.forEach(video => {
+    createVideo({ ...video, container: 'webm' })
+  })
 
   $autoPlayVideos.forEach(playVideo)
 }

@@ -1,5 +1,5 @@
 {
-  "videos": [
+  "mp4": [
     {
       "label": "With autoplay attribute (not muted)",
       "attributes": {
@@ -114,6 +114,121 @@
       }
     }
   ],
+  "webm": [
+    {
+      "label": "With autoplay attribute (not muted)",
+      "attributes": {
+        "autoplay": true,
+        "loop": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.jpg",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "Without autoplay attribute (not muted)",
+      "attributes": {
+        "loop": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.jpg",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "With autoplay attribute (not muted) + autoplay via javascript",
+      "attributes": {
+        "autoplay": true,
+        "data-autoplay": true,
+        "loop": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.jpg",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "Without autoplay attribute (not muted) + autoplay via javascript",
+      "attributes": {
+        "data-autoplay": true,
+        "loop": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.jpg",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "With autoplay attribute (muted)",
+      "attributes": {
+        "src": "./static/pikachu.webm",
+        "autoplay": true,
+        "loop": true,
+        "muted": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.jpg"
+      }
+    },
+    {
+      "label": "Without autoplay attribute (muted)",
+      "attributes": {
+        "loop": true,
+        "muted": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.jpg",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "With autoplay attribute (muted) + autoplay via javascript",
+      "attributes": {
+        "autoplay": true,
+        "data-autoplay": true,
+        "loop": true,
+        "muted": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.jpg",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "Without autoplay attribute (muted) + autoplay via javascript",
+      "attributes": {
+        "data-autoplay": true,
+        "loop": true,
+        "muted": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.jpg",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "Without autoplay attribute + gif poster",
+      "attributes": {
+        "loop": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.gif",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "With autoplay attribute + gif poster",
+      "attributes": {
+        "autoplay": true,
+        "loop": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.gif",
+        "src": "./static/pikachu.webm"
+      }
+    },
+    {
+      "label": "Without autoplay attribute + gif poster + autoplay via javascript",
+      "attributes": {
+        "data-autoplay": true,
+        "loop": true,
+        "playsinline": true,
+        "poster": "./static/pikachu.gif",
+        "src": "./static/pikachu.webm"
+      }
+    }
+  ],
   "images": [
     {
       "label": "Webp image + Gif fallback",
@@ -121,6 +236,16 @@
         {
           "srcset": "./static/pikachu.webp",
           "type": "image/webp"
+        }
+      ],
+      "src": "./static/pikachu.gif"
+    },
+    {
+      "label": "Webm image + Gif fallback",
+      "sources": [
+        {
+          "srcset": "./static/pikachu.webm",
+          "type": "image/webm"
         }
       ],
       "src": "./static/pikachu.gif"
